@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Capital Markets Weekly — Feb 20, 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
 <style>
   :root {
     --ink: #0d1117;
@@ -34,9 +34,9 @@
   /* ─── HEADER MASTHEAD ─── */
   .masthead {
     border-bottom: 3px solid var(--ink);
-    padding: 2rem 4rem 0;
+    padding: 2rem 4rem 0.3rem;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
   }
   .masthead::before {
     content: '';
@@ -57,7 +57,7 @@
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    align-items: end;
+    align-items: center;
     gap: 1rem;
     padding-bottom: 1.2rem;
     border-bottom: 1px solid var(--rule);
@@ -69,17 +69,22 @@
     color: var(--ink-light);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    line-height: 1.6;
+    line-height: 1.8;
   }
   .masthead-title {
     text-align: center;
   }
   .masthead-title h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(2.4rem, 5vw, 4.2rem);
-    letter-spacing: -0.02em;
-    line-height: 0.9;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    letter-spacing: -0.01em;
+    line-height: 1.4;
     color: var(--ink);
+    white-space: nowrap;
+    overflow: visible;
+    display: block;
+    padding: 0.15em 0 0.25em;
   }
   .masthead-title .subtitle {
     font-family: 'DM Mono', monospace;
@@ -96,7 +101,7 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     text-align: right;
-    line-height: 1.6;
+    line-height: 1.8;
   }
   .masthead-tagline {
     font-family: 'DM Serif Display', serif;
@@ -583,25 +588,23 @@
 <div class="update-banner">
   <span>NEXT UPDATE: <span class="countdown-value" id="countdown">Saturday</span></span>
   <span>DATA AS OF FRIDAY CLOSE — WEEKLY CADENCE</span>
-  <span>VOLUME <strong>VII</strong> · WEEK OF FEB 20, 2026</span>
+  <span>WEEK OF FEB 20, 2026</span>
 </div>
 
 <!-- Masthead -->
 <div class="masthead">
   <div class="masthead-inner">
     <div class="masthead-left">
-      <div>Est. 2026</div>
       <div>Weekly · Saturday</div>
       <div>U.S. Markets</div>
     </div>
     <div class="masthead-title">
-      <h1>Capital<br>Markets<br>Weekly</h1>
+      <h1>Capital Markets Weekly</h1>
       <div class="subtitle">Cross-Asset Intelligence · Updated Every Saturday</div>
     </div>
     <div class="masthead-right">
       <div id="pub-date">Feb 20, 2026</div>
       <div>Friday Close</div>
-      <div>Vol. VII</div>
     </div>
   </div>
   <div class="masthead-tagline">"Equities rally. Oil spikes. Gold hoards. Bitcoin bleeds. The market tells many stories at once."</div>
@@ -621,71 +624,6 @@
 
   <!-- ════════ DASHBOARD TAB ════════ -->
   <div class="tab-content active" id="tab-dashboard">
-
-    <!-- WHY STOCKS ROSE & USD MOVED -->
-    <div class="section-hed" style="margin-top:0">
-      <h2>Why Markets Moved This Week</h2>
-      <div class="rule"></div>
-      <div class="tag">Catalysts · Feb 16–20, 2026</div>
-    </div>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-card-label">📈 Why Stocks Rose</div>
-        <h4>Supreme Court Strikes Down Trump's Tariffs — 6-3 Ruling</h4>
-        <p>The dominant driver of this week's equity rally was a landmark Supreme Court ruling on Friday Feb 20 that President Trump's sweeping "Liberation Day" tariffs — imposed under the International Emergency Economic Powers Act (IEEPA) — were <strong>unconstitutional</strong>. The 6-3 decision ruled the White House exceeded its authority using emergency powers to impose broad import duties covering 100+ countries.</p>
-        <p>Stocks initially fell on disappointing Q4 GDP (+1.4% annualized vs. +2.5% expected) and sticky PCE inflation (+0.4% MoM), then reversed sharply after the midday ruling. Tariff-sensitive sectors led the rebound:
-          <span class="stat-pill green">Alphabet +3.7%</span>
-          <span class="stat-pill green">Amazon +2.6%</span>
-          <span class="stat-pill green">Etsy +8.4%</span>
-          <span class="stat-pill green">Comm. Services +2.65%</span>
-          <span class="stat-pill green">Cons. Discretionary +1.27%</span>
-        </p>
-        <p>For the full week: <span class="stat-pill green">S&amp;P 500 +1.07%</span> <span class="stat-pill green">Nasdaq +1.51%</span> <span class="stat-pill green">Dow +0.47%</span>. Trump responded by announcing a new 10% global tariff under Section 122 of the Trade Act of 1974 — a different legal basis — capping the rally's upside.</p>
-        <div class="why-source">
-          Sources: <a href="https://www.cnbc.com/2026/02/19/stock-market-today-live-updates.html" target="_blank">CNBC Markets</a> ·
-          <a href="https://www.fool.com/coverage/stock-market-today/2026/02/20/stock-market-today-feb-20-s-and-p-500-gains-0-7-as-supreme-court-strikes-down-tariffs/" target="_blank">Motley Fool</a> ·
-          <a href="https://www.nbcnews.com/business/markets/us-stocks-jump-scotus-strikes-trump-tariffs-rcna259907" target="_blank">NBC News</a> ·
-          <a href="https://finance.yahoo.com/news/stock-market-today-feb-20-221129656.html" target="_blank">Yahoo Finance</a>
-        </div>
-      </div>
-
-      <div class="why-card">
-        <div class="why-card-label">💵 Why the Dollar Moved</div>
-        <h4>Dollar Volatile: Initial Jump on Tariff Ruling, Then Reversed Lower</h4>
-        <p>The U.S. dollar had a whipsaw session on Feb 20. The Supreme Court ruling initially caused a <strong>sharp dollar spike</strong> as investors priced in reduced trade deficits and lower import volumes — less foreign currency demand for U.S. imports means less dollar selling. EUR/USD saw an immediate knee-jerk drop.</p>
-        <p>However, the dollar <strong>reversed lower by session end</strong> as markets digested that: (1) Trump immediately announced a replacement 10% global tariff, (2) Q4 GDP came in weak at just 1.4%, far below the 2.9% forecast, and (3) the Fed is in no rush to hike rates. The Dollar Index (DXY) closed near <span class="stat-pill gold">97.67</span>, down 0.2% on the day.</p>
-        <p>On the week, USD was broadly stronger vs. EUR (<span class="stat-pill red">EUR/USD −0.83%</span>) and JPY (<span class="stat-pill green">USD/JPY +1.53%</span>) as soft Eurozone data and BoJ uncertainty widened the rate differential in favor of the dollar.</p>
-        <div class="why-source">
-          Sources: <a href="https://money.usnews.com/investing/news/articles/2026-02-20/stocks-jump-after-us-supreme-court-rejects-trumps-tariffs" target="_blank">U.S. News / Reuters</a> ·
-          <a href="https://ca.finance.yahoo.com/news/stock-market-today-dow-sp-500-nasdaq-rise-after-supreme-court-strikes-down-trump-tariffs-000113270.html" target="_blank">Yahoo Finance / UBS</a> ·
-          <a href="https://tradingeconomics.com/united-states/government-bond-yield" target="_blank">Trading Economics</a>
-        </div>
-      </div>
-
-      <div class="why-card negative">
-        <div class="why-card-label">⚠️ Headwinds That Capped the Rally</div>
-        <h4>Weak GDP, Sticky Inflation & Trump's 10% Replacement Tariff</h4>
-        <p>Despite the tariff ruling tailwind, three factors prevented a larger rally: Q4 GDP grew just <span class="stat-pill red">+1.4%</span> annualized (est. +2.5%), dragged down by the 43-day government shutdown. Core PCE inflation came in at <span class="stat-pill red">3.0% YoY</span>, reinforcing a "higher-for-longer" Fed narrative. FOMC minutes revealed internal disagreement — some officials signaled rate hikes may still be needed if inflation persists.</p>
-        <p>Within hours of the SCOTUS ruling, Trump announced a <strong>replacement 10% global tariff</strong> under different legal authority (Section 122 / Trade Act of 1974), restoring uncertainty. Markets remain in a narrow 2026 trading range, with the S&amp;P 500 up less than 1% YTD — lagging the MSCI World index's +3%.</p>
-        <div class="why-source">
-          Sources: <a href="https://www.bea.gov/" target="_blank">Bureau of Economic Analysis (BEA)</a> ·
-          <a href="https://sundayguardianlive.com/business/us-stock-market-today-dow-jones-jumps-130-points-sp-500-and-nasdaq-surge-after-supreme-court-strikes-down-trumps-global-tariffs-171439/" target="_blank">Sunday Guardian Live</a> ·
-          <a href="https://markets.financialcontent.com/worldnow/article/marketminute-2026-2-16-the-return-of-fear-vix-pierces-key-threshold-as-market-volatility-roars-back-to-life" target="_blank">Financial Content / CBOE</a>
-        </div>
-      </div>
-
-      <div class="why-card">
-        <div class="why-card-label">🛢️ Why Oil Surged +5.57%</div>
-        <h4>U.S.–Iran Tensions & Strait of Hormuz Supply Risk</h4>
-        <p>WTI crude's biggest weekly jump of 2026 (+5.57% to $66.39) was driven by rapidly escalating U.S.–Iran nuclear tensions. President Trump signaled potential military action against Iran's nuclear program, raising fears of supply disruption through the Strait of Hormuz — through which roughly <strong>20 million barrels per day</strong> transit globally.</p>
-        <p>The December U.S. trade deficit also surged 33% to <span class="stat-pill red">$70.3B</span> (vs. $55.5B expected), the second consecutive monthly record, with goods imports hitting a record $1.24 trillion for full-year 2025. Higher oil prices are directly inflationary and complicate the Fed's rate path.</p>
-        <div class="why-source">
-          Sources: <a href="https://sundayguardianlive.com/business/us-stock-market-today-dow-jones-jumps-130-points-sp-500-and-nasdaq-surge-after-supreme-court-strikes-down-trumps-global-tariffs-171439/" target="_blank">Sunday Guardian Live</a> ·
-          <a href="https://tradingeconomics.com/commodity/gold" target="_blank">Trading Economics — Commodities</a>
-        </div>
-      </div>
-    </div>
 
     <!-- KPI Row -->
     <div class="kpi-row">
@@ -724,6 +662,71 @@
       </div>
     </div>
 
+    <!-- WHY STOCKS ROSE & USD MOVED -->
+    <div class="section-hed" style="margin-top:0">
+      <h2>Why Markets Moved This Week</h2>
+      <div class="rule"></div>
+      <div class="tag">Catalysts · Feb 16–20, 2026</div>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-label">📈 Why Stocks Rose</div>
+        <h4>Supreme Court Strikes Down Trump's Tariffs — 6-3 Ruling</h4>
+        <p>The dominant driver of this week's equity rally was a landmark Supreme Court ruling on Friday Feb 20 that President Trump's sweeping "Liberation Day" tariffs — imposed under the International Emergency Economic Powers Act (IEEPA) — were <strong>unconstitutional</strong>. The 6-3 decision ruled the White House exceeded its authority using emergency powers to impose broad import duties covering 100+ countries.</p>
+        <p>Stocks initially fell on disappointing Q4 GDP (+1.4% annualized vs. +2.5% expected) and sticky PCE inflation (+0.4% MoM), then reversed sharply after the midday ruling. Tariff-sensitive sectors led the rebound:
+          <span class="stat-pill green">Alphabet +3.7%</span>
+          <span class="stat-pill green">Amazon +2.6%</span>
+          <span class="stat-pill green">Etsy +8.4%</span>
+          <span class="stat-pill green">Comm. Services +2.65%</span>
+          <span class="stat-pill green">Cons. Discretionary +1.27%</span>
+        </p>
+        <p>For the full week: <span class="stat-pill green">S&amp;P 500 +1.07%</span> <span class="stat-pill green">Nasdaq +1.51%</span> <span class="stat-pill green">Dow +0.47%</span>. Trump responded by announcing a new 10% global tariff under Section 122 of the Trade Act of 1974 — a different legal basis — capping the rally's upside.</p>
+        <div class="why-source">
+          Sources: <a href="https://www.cnbc.com/2026/02/19/stock-market-today-live-updates.html" target="_blank">CNBC Markets</a> ·
+          <a href="https://www.fool.com/coverage/stock-market-today/2026/02/20/stock-market-today-feb-20-s-and-p-500-gains-0-7-as-supreme-court-strikes-down-tariffs/" target="_blank">Motley Fool</a> ·
+          <a href="https://www.nbcnews.com/business/markets/us-stocks-jump-scotus-strikes-trump-tariffs-rcna259907" target="_blank">NBC News</a> ·
+          <a href="https://finance.yahoo.com/news/stock-market-today-feb-20-221129656.html" target="_blank">Yahoo Finance</a>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-label">💵 Why the Dollar Moved</div>
+        <h4>Dollar Volatile: Initial Jump on Tariff Ruling, Then Reversed Lower</h4>
+        <p>During the week of Feb 16–20, EUR/USD drifted modestly lower as the U.S. dollar remained supported by relative growth and rate dynamics, though price action was choppy rather than directional. On Feb 20, the Supreme Court's 6–3 ruling on tariffs contributed to intraday volatility, but the move was gradual rather than a sharp, headline-driven spike at a precise timestamp. As softer Q4 GDP data tempered Fed expectations, dollar gains faded into consolidation, leaving the week characterized more by macro crosscurrents than a clean tariff catalyst.</p>
+        <p>However, the dollar <strong>reversed lower by session end</strong> as markets digested that: (1) Trump immediately announced a replacement 10% global tariff, (2) Q4 GDP came in weak at just 1.4%, far below the 2.9% forecast, and (3) the Fed is in no rush to hike rates. The Dollar Index (DXY) closed near <span class="stat-pill gold">97.67</span>, down 0.2% on the day.</p>
+        <p>On the week, USD was broadly stronger vs. EUR (<span class="stat-pill red">EUR/USD −0.83%</span>) and JPY (<span class="stat-pill green">USD/JPY +1.53%</span>) as soft Eurozone data and BoJ uncertainty widened the rate differential in favor of the dollar.</p>
+        <div class="why-source">
+          Sources: <a href="https://money.usnews.com/investing/news/articles/2026-02-20/stocks-jump-after-us-supreme-court-rejects-trumps-tariffs" target="_blank">U.S. News / Reuters</a> ·
+          <a href="https://ca.finance.yahoo.com/news/stock-market-today-dow-sp-500-nasdaq-rise-after-supreme-court-strikes-down-trump-tariffs-000113270.html" target="_blank">Yahoo Finance / UBS</a> ·
+          <a href="https://tradingeconomics.com/united-states/government-bond-yield" target="_blank">Trading Economics</a>
+        </div>
+      </div>
+
+      <div class="why-card negative">
+        <div class="why-card-label">⚠️ Headwinds That Capped the Rally</div>
+        <h4>Weak GDP, Sticky Inflation & Trump's 10% Replacement Tariff</h4>
+        <p>Despite the tariff ruling tailwind, three factors prevented a larger rally: Q4 GDP grew just <span class="stat-pill red">+1.4%</span> annualized (est. +2.5%), dragged down by the 43-day government shutdown. Core PCE inflation came in at <span class="stat-pill red">3.0% YoY</span>, reinforcing a "higher-for-longer" Fed narrative. FOMC minutes revealed internal disagreement — some officials signaled rate hikes may still be needed if inflation persists.</p>
+        <p>Within hours of the SCOTUS ruling, Trump announced a <strong>replacement 10% global tariff</strong> under different legal authority (Section 122 / Trade Act of 1974), restoring uncertainty. Markets remain in a narrow 2026 trading range, with the S&amp;P 500 up less than 1% YTD — lagging the MSCI World index's +3%.</p>
+        <div class="why-source">
+          Sources: <a href="https://www.bea.gov/" target="_blank">Bureau of Economic Analysis (BEA)</a> ·
+          <a href="https://sundayguardianlive.com/business/us-stock-market-today-dow-jones-jumps-130-points-sp-500-and-nasdaq-surge-after-supreme-court-strikes-down-trumps-global-tariffs-171439/" target="_blank">Sunday Guardian Live</a> ·
+          <a href="https://markets.financialcontent.com/worldnow/article/marketminute-2026-2-16-the-return-of-fear-vix-pierces-key-threshold-as-market-volatility-roars-back-to-life" target="_blank">Financial Content / CBOE</a>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-label">🛢️ Why Oil Surged +5.57%</div>
+        <h4>U.S.–Iran Tensions & Strait of Hormuz Supply Risk</h4>
+        <p>WTI crude's biggest weekly jump of 2026 (+5.57% to $66.39) was driven by rapidly escalating U.S.–Iran nuclear tensions. President Trump signaled potential military action against Iran's nuclear program, raising fears of supply disruption through the Strait of Hormuz — through which roughly <strong>20 million barrels per day</strong> transit globally.</p>
+        <p>The December U.S. trade deficit also surged 33% to <span class="stat-pill red">$70.3B</span> (vs. $55.5B expected), the second consecutive monthly record, with goods imports hitting a record $1.24 trillion for full-year 2025. Higher oil prices are directly inflationary and complicate the Fed's rate path.</p>
+        <div class="why-source">
+          Sources: <a href="https://sundayguardianlive.com/business/us-stock-market-today-dow-jones-jumps-130-points-sp-500-and-nasdaq-surge-after-supreme-court-strikes-down-trumps-global-tariffs-171439/" target="_blank">Sunday Guardian Live</a> ·
+          <a href="https://tradingeconomics.com/commodity/gold" target="_blank">Trading Economics — Commodities</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Interpretation Box -->
     <div class="section-hed">
       <h2>Week in Review</h2>
@@ -734,7 +737,7 @@
     <div class="interp-box">
       <h3>Cross-Asset Interpretation · Week of Feb 20</h3>
       <p><strong>The week's defining catalyst:</strong> the U.S. Supreme Court ruled 6–3 on Feb 20 that President Trump's sweeping IEEPA tariffs were unconstitutional, triggering an intraday reversal that lifted the S&P 500 +0.69% and Nasdaq +0.90% on the day alone. The relief rally reflected months of pent-up tariff anxiety unwinding — Alphabet +3.7%, Amazon +2.6%, Etsy +8.4%, and consumer discretionary broadly outperformed. The full-week result: S&P 500 +1.07%, Nasdaq +1.51%, with VIX falling sharply −7.33% to 19.09.</p>
-      <p>The most striking divergence: crude oil surged +5.57% on U.S.–Iran nuclear tensions (Strait of Hormuz risk) while Bitcoin fell −2.58%, now down −22.29% YTD — crypto decoupled from traditional risk-on assets entirely. Gold's relentless bid (+1.17% WoW, +17.46% YTD) alongside rising equities reflects <em>hedging</em>, not pure risk appetite — investors are buying growth and insurance simultaneously, an unusual cross-asset signal.</p>
+      <p>The most striking divergence: crude oil surged +5.57% on U.S.–Iran nuclear tensions (Strait of Hormuz risk) while Bitcoin fell −2.58%, now down −22.29% YTD — crypto decoupled from traditional risk-on assets entirely. Gold continues to rally alongside equities (+1.17% WoW, +17.46% YTD); however, rising implied volatility in gold options (GVZ +50% YTD) suggests the move is increasingly speculative rather than purely defensive positioning. The classic "fear hedge" narrative is complicated by options markets pricing growing uncertainty around gold's own path — a signal that the rally may be as much momentum-driven as it is structural.</p>
       <p>The dollar whipsawed: it initially spiked on the tariff ruling (less trade = less dollar selling), then reversed lower as Trump announced a replacement 10% global tariff and Q4 GDP disappointed at just +1.4% annualized (vs. +2.5% expected). For the full week, USD strengthened vs. EUR (−0.83%) and was mixed vs. JPY (+1.53%), driven by Europe's economic weakness and BoJ rate uncertainty. Credit spreads well-behaved (HY OAS −1.37%); 10Y yield at 4.086% signals the market still prices eventual Fed easing.</p>
     </div>
 
@@ -1151,7 +1154,7 @@
     <!-- FRED: INTEREST RATES & CREDIT -->
     <p style="font-family:'DM Mono',monospace;font-size:0.65rem;color:var(--accent);margin:1.4rem 0 0.8rem;letter-spacing:0.18em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:0.4rem;">④ Interest Rates &amp; Credit Spreads — FRED, St. Louis Fed</p>
     <div class="sources-grid">
-      <div class="source-item">10-Year Treasury Yield (DGS10) — 4.086% as of Feb 19 — <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" style="color:var(--accent2)">fred.stlouisfed.org/series/DGS10</a></div>
+      <div class="source-item">10-Year Treasury Yield (^TNX) — 4.086% as of Feb 19 — <a href="https://finance.yahoo.com/quote/%5ETNX/history/" target="_blank" style="color:var(--accent2)">Yahoo Finance — CBOE Interest Rate 10 Year T Note (^TNX)</a></div>
       <div class="source-item">Secured Overnight Financing Rate (SOFR) — <a href="https://fred.stlouisfed.org/series/SOFR" target="_blank" style="color:var(--accent2)">fred.stlouisfed.org/series/SOFR</a></div>
       <div class="source-item">BBB Corporate OAS (BAMLC0A4CBBB) — ~0.96%, Feb 2026 — <a href="https://fred.stlouisfed.org/series/BAMLC0A4CBBB" target="_blank" style="color:var(--accent2)">fred.stlouisfed.org/series/BAMLC0A4CBBB</a></div>
       <div class="source-item">US High Yield OAS (BAMLH0A0HYM2) — ~2.86%, −1.37% WoW — <a href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2" target="_blank" style="color:var(--accent2)">fred.stlouisfed.org/series/BAMLH0A0HYM2</a></div>
